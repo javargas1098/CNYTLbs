@@ -23,8 +23,7 @@ Solo de debe descargar el proyecto de github
 	 - ![formula1](Fotos/Capture2.PNG)
 	 - ![formula2](Fotos/Capture3.PNG)
 	 
-Ejecuta los siguientes comandos:
-	- Compila nuestro código. De los .java genera los .class.  
+- Ejecuta los siguientes comandos para ejecutar las pruebas: 
     `mvn compile`
 	-   Compila las pruebas.  
     `mvn test-compile`
