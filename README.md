@@ -19,7 +19,20 @@ Solo de debe descargar el proyecto de github
  - MatrixTest
 	 - ![formula1](Fotos/Capture1.PNG)
 	 - ![formula2](Fotos/Capture4.PNG)
-	 - ``` @Test
+	
+ - CalculatorTEst
+	 - ![formula1](Fotos/Capture2.PNG)
+	 - ![formula2](Fotos/Capture3.PNG)
+	 
+- Ejecuta los siguientes comandos para ejecutar las pruebas: 
+    `mvn compile`
+	-   Compila las pruebas.  
+    `mvn test-compile`
+	-   Ejecuta las pruebas.  
+    `mvn test`
+## How to use the test
+ - Pruebas suma de matrices 
+	```  @Test
 	void testMatSuma() {
 		// TestCase
 		MatrizComplex mat1 = new MatrizComplex(2, 2);
@@ -64,18 +77,8 @@ Solo de debe descargar el proyecto de github
 		// Respuesta
 		assertEquals(mat3, mathfinal);
 
-	}```
- - CalculatorTEst
-	 - ![formula1](Fotos/Capture2.PNG)
-	 - ![formula2](Fotos/Capture3.PNG)
-	 
-- Ejecuta los siguientes comandos para ejecutar las pruebas: 
-    `mvn compile`
-	-   Compila las pruebas.  
-    `mvn test-compile`
-	-   Ejecuta las pruebas.  
-    `mvn test`
-
+	}
+	```
 
 ## Built With
 
