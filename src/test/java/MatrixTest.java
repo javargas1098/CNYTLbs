@@ -1,11 +1,9 @@
-
-
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
-
-
-
+import Operations.Complex;
+import Operations.MatrixCalculator;
+import Operations.MatrizComplex;
 
 public class MatrixTest {
 
@@ -300,6 +298,7 @@ public class MatrixTest {
 		assertEquals(mat3, mathfinal);
 
 	}
+
 	@Test
 	void testMatAc() {
 		// TestCase
@@ -366,7 +365,7 @@ public class MatrixTest {
 
 		Double rfinal = MatrixCalculator.norMatriz(mat1);
 
-		// System.out.println(rfinal);
+		 System.out.println(rfinal);
 
 		// Respuesta
 		assertEquals(mat3, rfinal);

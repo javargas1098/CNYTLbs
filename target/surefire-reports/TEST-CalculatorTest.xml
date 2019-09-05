@@ -1,66 +1,72 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="0" failures="0" name="CalculatorTest" time="0" errors="0" skipped="0">
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="CalculatorTest" time="0.042" tests="9" errors="0" skipped="0" failures="0">
   <properties>
-    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\bin"/>
-    <property name="java.vm.version" value="25.201-b09"/>
-    <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:/Users/2124259/workspace/CNYTLbs"/>
-    <property name="java.vendor.url" value="http://java.oracle.com/"/>
-    <property name="path.separator" value=";"/>
-    <property name="guice.disable.misplaced.annotation.check" value="true"/>
-    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="file.encoding.pkg" value="sun.io"/>
-    <property name="user.script" value=""/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\2124259\workspace\CNYTLbs\target\test-classes;C:\Users\2124259\workspace\CNYTLbs\target\classes;C:\Users\2124259\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\Users\2124259\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.5.1\junit-jupiter-engine-5.5.1.jar;C:\Users\2124259\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\2124259\.m2\repository\org\junit\platform\junit-platform-engine\1.5.1\junit-platform-engine-1.5.1.jar;C:\Users\2124259\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.5.1\junit-jupiter-api-5.5.1.jar;C:\Users\2124259\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\2124259\.m2\repository\org\junit\platform\junit-platform-commons\1.5.1\junit-platform-commons-1.5.1.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Bogota"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="sun.os.patch.level" value=""/>
-    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\2124259\workspace\CNYTLbs"/>
-    <property name="java.runtime.version" value="1.8.0_201-b09"/>
-    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\endorsed"/>
-    <property name="os.arch" value="amd64"/>
-    <property name="java.io.tmpdir" value="C:\Users\2124259\AppData\Local\Temp\"/>
-    <property name="line.separator" value="
-"/>
-    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="user.variant" value=""/>
-    <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:/Program Files/apache-maven-3.6.0/bin/m2.conf"/>
-    <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_201\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\2124259\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\2124259\bin;C:\Program Files\Haskell\bin;C:\Program Files\Haskell Platform\8.6.3\lib\extralibs\bin;C:\Program Files\Haskell Platform\8.6.3\bin;C:\Program Files\Java\jre1.8.0_201\bin;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Program Files (x86)\Python37-32\Scripts;C:\Program Files (x86)\Python37-32;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\PuTTY;C:\Program Files (x86)\WinSCP;C:\Program Files\Git\cmd;C:\Program Files\Haskell Platform\8.6.3\mingw\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn;C:\Program Files\swipl\bin;C:\ProgramData\Oracle\Java\javapat;.;C:\Android;C:\Android\tools;C:\Android\platform_tools;C:\Program Files\apache-maven-3.6.0\bin;C:\Program Files\Apache Software Foundation\Apache Maven 3.6.0\bin;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Program Files\Java\jre1.8.0_201\bin;C:\Program Files (x86)\Wolfram Research\WolframScript;C:\Program Files\heroku\bin;C:\Users\2124259\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;."/>
-    <property name="maven.conf" value="C:/Program Files/apache-maven-3.6.0/conf"/>
-    <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="java.class.version" value="52.0"/>
-    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="10.0"/>
-    <property name="library.jansi.path" value="C:/Program Files/apache-maven-3.6.0/lib/jansi-native"/>
-    <property name="user.home" value="C:\Users\2124259"/>
-    <property name="user.timezone" value="America/Bogota"/>
-    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
-    <property name="java.specification.version" value="1.8"/>
-    <property name="file.encoding" value="Cp1252"/>
-    <property name="user.name" value="2124259"/>
-    <property name="java.class.path" value="C:/Program Files/apache-maven-3.6.0/boot/plexus-classworlds-2.5.2.jar"/>
-    <property name="java.vm.specification.version" value="1.8"/>
-    <property name="sun.arch.data.model" value="64"/>
-    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_201\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
-    <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="user.language" value="en"/>
-    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
-    <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.version" value="1.8.0_201"/>
-    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
-    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_201\jre\classes"/>
-    <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="C:\Program Files\apache-maven-3.6.0"/>
-    <property name="file.separator" value="\"/>
-    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\2124259\AppData\Local\Temp\surefire2542559616487597243\surefirebooter3562813955709410114.jar C:\Users\2124259\AppData\Local\Temp\surefire2542559616487597243 2019-09-05T14-27-09_782-jvmRun1 surefire2818992014798147205tmp surefire_04240078442026465369tmp"/>
+    <property name="surefire.test.class.path" value="C:\Users\2124259\workspace\CNYTLbs\target\test-classes;C:\Users\2124259\workspace\CNYTLbs\target\classes;C:\Users\2124259\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\Users\2124259\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.5.1\junit-jupiter-engine-5.5.1.jar;C:\Users\2124259\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\2124259\.m2\repository\org\junit\platform\junit-platform-engine\1.5.1\junit-platform-engine-1.5.1.jar;C:\Users\2124259\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.5.1\junit-jupiter-api-5.5.1.jar;C:\Users\2124259\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\2124259\.m2\repository\org\junit\platform\junit-platform-commons\1.5.1\junit-platform-commons-1.5.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\2124259"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_201\jre"/>
+    <property name="basedir" value="C:\Users\2124259\workspace\CNYTLbs"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\2124259\AppData\Local\Temp\surefire2542559616487597243\surefirebooter3562813955709410114.jar"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_201\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_201-b09"/>
+    <property name="user.name" value="2124259"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\2124259\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\2124259\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_201"/>
+    <property name="user.dir" value="C:\Users\2124259\workspace\CNYTLbs"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\2124259\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\2124259\bin;C:\Program Files\Haskell\bin;C:\Program Files\Haskell Platform\8.6.3\lib\extralibs\bin;C:\Program Files\Haskell Platform\8.6.3\bin;C:\Program Files\Java\jre1.8.0_201\bin;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Program Files (x86)\Python37-32\Scripts;C:\Program Files (x86)\Python37-32;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\PuTTY;C:\Program Files (x86)\WinSCP;C:\Program Files\Git\cmd;C:\Program Files\Haskell Platform\8.6.3\mingw\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn;C:\Program Files\swipl\bin;C:\ProgramData\Oracle\Java\javapat;.;C:\Android;C:\Android\tools;C:\Android\platform_tools;C:\Program Files\apache-maven-3.6.0\bin;C:\Program Files\Apache Software Foundation\Apache Maven 3.6.0\bin;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Program Files\Java\jre1.8.0_201\bin;C:\Program Files (x86)\Wolfram Research\WolframScript;C:\Program Files\heroku\bin;C:\Users\2124259\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.201-b09"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="sun.desktop" value="windows"/>
-    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="java.class.version" value="52.0"/>
   </properties>
+  <testcase name="testPhase" classname="CalculatorTest" time="0.033"/>
+  <testcase name="testResta" classname="CalculatorTest" time="0"/>
+  <testcase name="testSuma" classname="CalculatorTest" time="0"/>
+  <testcase name="testCartesianToPolar" classname="CalculatorTest" time="0.001"/>
+  <testcase name="testPolarToCartesian" classname="CalculatorTest" time="0"/>
+  <testcase name="testProducto" classname="CalculatorTest" time="0"/>
+  <testcase name="testConjugate" classname="CalculatorTest" time="0"/>
+  <testcase name="testModulus" classname="CalculatorTest" time="0"/>
+  <testcase name="testDivision" classname="CalculatorTest" time="0.001"/>
 </testsuite>
