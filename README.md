@@ -75,7 +75,7 @@ Solo de debe descargar el proyecto de github
 	
 	```
  - Resta de Matrices
- ```   
+   		 ```
 		// como se crean las matrices
 		MatrizComplex mat1 = new MatrizComplex(2, 2);
 		MatrizComplex mat2 = new MatrizComplex(2, 2);
@@ -113,9 +113,9 @@ Solo de debe descargar el proyecto de github
 		mat3.addComplex(1, 1, c12);
 		//como ejecutar la resta
 		MatrizComplex mathfinal = MatrixCalculator.resMatrix(mat1, mat2);
-	```
+		 ```
  - Multiplicacion de matrices
-  	```
+  		```
 		// como se crean las matrices
 		MatrizComplex mat1 = new MatrizComplex(2, 2);
 		MatrizComplex mat2 = new MatrizComplex(2, 2);
@@ -154,9 +154,7 @@ Solo de debe descargar el proyecto de github
 		//como ejecutar la multiplicacion
 		MatrizComplex mathfinal = MatrixCalculator.mulMatriz(mat1, mat2);
 
-
-	}
-	```
+		```
  	
 ## Built With
 
