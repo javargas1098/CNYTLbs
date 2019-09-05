@@ -33,7 +33,7 @@ Solo de debe descargar el proyecto de github
 ## How to use the test
  - Pruebas suma de matrices 
  - Suma de Matrices
-	```  
+```  
 		// como se crean las matrices
 		MatrizComplex mat1 = new MatrizComplex(2, 2);
 		MatrizComplex mat2 = new MatrizComplex(2, 2);
@@ -71,7 +71,7 @@ Solo de debe descargar el proyecto de github
 		mat3.addComplex(1, 1, c12);
 		//como jecutar las suma
 		MatrizComplex mathfinal = MatrixCalculator.sumMatrix(mat1, mat2);
-	```
+```
  - Resta de Matrices
 ```   
 		// como se crean las matrices
