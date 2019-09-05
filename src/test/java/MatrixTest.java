@@ -53,6 +53,82 @@ public class MatrixTest {
 		assertEquals(mat3, mathfinal);
 
 	}
+	@Test
+	void testMatSumaVect() {
+		// TestCase
+		MatrizComplex mat1 = new MatrizComplex(2, 1);
+		MatrizComplex mat2 = new MatrizComplex(2, 1);
+
+		MatrizComplex mat3 = new MatrizComplex(2, 1);
+		// math1
+		Complex c1 = new Complex(2, 2);
+		Complex c2 = new Complex(2, 0);
+
+		// mat2
+		Complex c7 = new Complex(3, 0);
+		Complex c8 = new Complex(1, 4);
+
+		// math answer
+		Complex c5 = new Complex(5, 2);
+		Complex c6 = new Complex(3, 4);
+
+		mat1.addComplex(0, 0, c1);
+		mat1.addComplex(1, 0, c2);
+
+
+		mat2.addComplex(0, 0, c7);
+		mat2.addComplex(1, 0, c8);
+
+		mat3.addComplex(0, 0, c5);
+		mat3.addComplex(1, 0, c6);
+
+
+		MatrizComplex mathfinal = MatrixCalculator.sumMatrix(mat1, mat2);
+
+		// System.out.println(mathfinal.toString());
+
+		// Respuesta
+		assertEquals(mat3, mathfinal);
+
+	}
+	@Test
+	void testMatRestaVect() {
+		// TestCase
+		MatrizComplex mat1 = new MatrizComplex(2, 1);
+		MatrizComplex mat2 = new MatrizComplex(2, 1);
+
+		MatrizComplex mat3 = new MatrizComplex(2, 1);
+		// math1
+		Complex c1 = new Complex(2, 2);
+		Complex c2 = new Complex(2, 0);
+
+		// mat2
+		Complex c7 = new Complex(3, 0);
+		Complex c8 = new Complex(1, 4);
+
+		// math answer
+		Complex c5 = new Complex(-1, 2);
+		Complex c6 = new Complex(1, -4);
+
+
+		mat1.addComplex(0, 0, c1);
+		mat1.addComplex(1, 0, c2);
+
+
+		mat2.addComplex(0, 0, c7);
+		mat2.addComplex(1, 0, c8);
+
+		mat3.addComplex(0, 0, c5);
+		mat3.addComplex(1, 0, c6);
+
+		MatrizComplex mathfinal = MatrixCalculator.resMatrix(mat1, mat2);
+
+		// System.out.println(mathfinal.toString());
+
+		// Respuesta
+		assertEquals(mat3, mathfinal);
+
+	}
 
 	@Test
 	void testMatResta() {
@@ -365,7 +441,7 @@ public class MatrixTest {
 
 		Double rfinal = MatrixCalculator.norMatriz(mat1);
 
-		 System.out.println(rfinal);
+		// System.out.println(rfinal);
 
 		// Respuesta
 		assertEquals(mat3, rfinal);
