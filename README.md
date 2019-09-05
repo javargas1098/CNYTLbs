@@ -72,10 +72,10 @@ Solo de debe descargar el proyecto de github
 		//como jecutar las suma
 		MatrizComplex mathfinal = MatrixCalculator.sumMatrix(mat1, mat2);
 
-	}
+	
 	```
  - Resta de Matrices
- ```  ```  
+ ```   
 		// como se crean las matrices
 		MatrizComplex mat1 = new MatrizComplex(2, 2);
 		MatrizComplex mat2 = new MatrizComplex(2, 2);
