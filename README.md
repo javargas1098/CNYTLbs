@@ -22,7 +22,14 @@ Solo de debe descargar el proyecto de github
  - CalculatorTEst
 	 - ![formula1](Fotos/Capture2.PNG)
 	 - ![formula2](Fotos/Capture3.PNG)
-
+	 
+Ejecuta los siguientes comandos:
+	- Compila nuestro código. De los .java genera los .class.  
+    `mvn compile`
+	-   Compila las pruebas.  
+    `mvn test-compile`
+	-   Ejecuta las pruebas.  
+    `mvn test`
 
 
 ## Built With
