@@ -78,5 +78,18 @@ public class MatrizComplex {
 		}
 		return matrix;
 	}
+	public String toString2() {
+		String matrix = "";
+		for (int i = 0; i < filas; i++) {
+			for (int j = 0; j < columnas; j++) {
+				
+				matrix += "  " + ((this.matriz[i][j].getImaginario() == 0) ? this.matriz[i][j].getReal() : this.matriz[i][j].toString());
+
+			}
+			matrix += "\n";
+
+		}
+		return matrix;
+	}
 
 }
