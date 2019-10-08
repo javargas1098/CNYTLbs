@@ -61,7 +61,7 @@ public class MatrixCalculator {
 				matfinal.addComplex(j, i, rtaComplex);
 			}
 		}
-		return new VectorComplex(matfinal);
+		return matfinal;
 
 	}
 
@@ -75,7 +75,7 @@ public class MatrixCalculator {
 				matfinal.addComplex(i, j, rtaComplex);
 			}
 		}
-		return new VectorComplex(matfinal);
+		return matfinal;
 
 	}
 
@@ -115,9 +115,9 @@ public class MatrixCalculator {
 	}
 
 	public static MatrizComplex innerMatriz(MatrizComplex mat1) {
-		VectorComplex refeComplex = (VectorComplex) adjMatrix(mat1);
-		VectorComplex matfinal = (VectorComplex) mulMatriz(refeComplex, mat1);
-		return new VectorComplex(matfinal);
+		MatrizComplex refeComplex = adjMatrix(mat1);
+		MatrizComplex matfinal = mulMatriz(refeComplex, mat1);
+		return matfinal;
 	}
 
 	public static Complex innerTwoMatriz(VectorComplex mat1, VectorComplex mat2) {
