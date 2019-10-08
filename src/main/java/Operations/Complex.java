@@ -8,6 +8,8 @@ public class Complex {
 	double fase;
 	double module2;
 	
+	
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -36,6 +38,20 @@ public class Complex {
 		return true;
 	}
 	
+	public Complex(double real, double y) {
+		this.x = real;
+		this.y = y;
+		this.setModule();
+		this.setNosqrtModule();
+		this.setFase();
+
+	}
+	
+	public Complex Inverse(Complex number) {
+		// TODO Auto-generated method stub
+		return new Complex(-(number.x), -(number.y));
+		
+	}
 
 	public double getFase() {
 		return fase;
@@ -61,14 +77,7 @@ public class Complex {
 		this.y = y;
 	}
 
-	public Complex(double real, double y) {
-		this.x = real;
-		this.y = y;
-		this.setModule();
-		this.setNosqrtModule();
-		this.setFase();
-
-	}
+	
 	public double getModule2() {
 		return module2;
 	}
@@ -78,6 +87,10 @@ public class Complex {
 	}
 
 	public double setNosqrtModule() {
+		// TODO Auto-generated method stub
+		return this.module2 = Math.pow(x, 2) + Math.pow(y, 2);
+	}
+	public double iverse() {
 		// TODO Auto-generated method stub
 		return this.module2 = Math.pow(x, 2) + Math.pow(y, 2);
 	}

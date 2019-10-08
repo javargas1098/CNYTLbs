@@ -248,4 +248,25 @@ public class MatrixCalculator {
 		return matUnitari;
 	}
 
+	public static MatrizComplex inverMatriz(MatrizComplex mat1) {
+		MatrizComplex inver = new MatrizComplex(mat1.getFilas(), mat1.getColumnas());
+		for (int i = 0; i < inver.getFilas(); i++) {
+			for (int j = 0; j < inver.getColumnas(); j++) {
+				inver.addComplex(i, j, number);
+				
+			}
+		}
+		inversoMatriz[i] = inversoVector(m[i]);
+	}return inversoMatriz;
+
+	}
+
+	public static ComplexNumber[] inversoVector(ComplexNumber[] v) {
+		ComplexNumber[] inversoVector = new ComplexNumber[v.length];
+		for (int i = 0; i < v.length; i++) {
+			inversoVector[i] = v[i].inversoAditivo();
+		}
+		return inversoVector;
+	}
+
 }
