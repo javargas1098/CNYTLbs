@@ -272,5 +272,38 @@ public class MatrixCalculator {
 
 		return inver;
 	}
+	
+	 public static String stringMatriz(MatrizComplex mat1) {
+	        String matrizString = "{";
+	        for (int i = 0; i < mat1.getFilas(); i++) {
+	            matrizString += "{";
+	            for (int j = 0; j < mat1.getColumnas(); j++) {
+	                if (j + 1 == mat1.getColumnas()) {
+	                    if (mat1.getPosition(i, j).getReal() == 0) {
+	                        matrizString += mat1.getPosition(i, j).getImaginario() + "i";
+	                    } else if (mat1.getPosition(i, j).getImaginario() == 0) {
+	                        matrizString += mat1.getPosition(i, j).getReal();
+	                    } else {
+	                        matrizString += mat1.getPosition(i, j).getReal() + "" + mat1.getPosition(i, j).getImaginario() + "i";
+	                    }
+	                } else {
+	                    if (mat1.getPosition(i, j).getReal() == 0) {
+	                        matrizString += mat1.getPosition(i, j).getImaginario() + "i,";
+	                    } else if (mat1.getPosition(i, j).getImaginario() == 0) {
+	                        matrizString += mat1.getPosition(i, j).getReal() + ",";
+	                    } else {
+	                        matrizString += mat1.getPosition(i, j).getReal() + "" + mat1.getPosition(i, j).getImaginario() + "i,";
+	                    }
+	                }
+	            }
+	            if (i + 1 == mat1.getFilas()) {
+	                matrizString += "}";
+	            } else {
+	                matrizString += "},";
+	            }
+	        }
+	        matrizString += "}";
+	        return matrizString;
+	    }
 
 }
