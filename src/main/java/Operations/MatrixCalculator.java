@@ -119,6 +119,15 @@ public class MatrixCalculator {
 		MatrizComplex matfinal = mulMatriz(refeComplex, mat1);
 		return matfinal;
 	}
+	public static Complex innerTwoMatriz(VectorComplex mat1,VectorComplex mat2) {
+		VectorComplex refeComplex = (VectorComplex) adjMatrix(mat1);
+		Complex prdComplex=new Complex(0, 0);;
+		for (int i = 0; i < mat1.getFilas(); i++) {
+			prdComplex = prdComplex.sumComplex(refeComplex.getElement(i).mulComplex(mat2.getElement(i)));
+			
+		}
+		return prdComplex;
+	}
 
 	public static double norMatriz(MatrizComplex mat1) {
 		double normaMayor = 0;
