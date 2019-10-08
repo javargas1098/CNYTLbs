@@ -250,23 +250,27 @@ public class MatrixCalculator {
 
 	public static MatrizComplex inverMatriz(MatrizComplex mat1) {
 		MatrizComplex inver = new MatrizComplex(mat1.getFilas(), mat1.getColumnas());
+		Complex inverComplex = new Complex(0, 0);
 		for (int i = 0; i < inver.getFilas(); i++) {
 			for (int j = 0; j < inver.getColumnas(); j++) {
-				inver.addComplex(i, j, number);
-				
+				inverComplex.Inverse(mat1.getPosition(i, j));
+				inver.addComplex(i, j, inverComplex);
+
 			}
 		}
-		inversoMatriz[i] = inversoVector(m[i]);
-	}return inversoMatriz;
+		return inver;
 
 	}
 
-	public static ComplexNumber[] inversoVector(ComplexNumber[] v) {
-		ComplexNumber[] inversoVector = new ComplexNumber[v.length];
-		for (int i = 0; i < v.length; i++) {
-			inversoVector[i] = v[i].inversoAditivo();
+	public static VectorComplex inverVector(VectorComplex v) {
+		VectorComplex inver = new VectorComplex(v.getFilas());
+		Complex inverComplex = new Complex(0, 0);
+		for (int i = 0; i < inver.getFilas(); i++) {
+			inverComplex.Inverse(v.getElement(i));
+			inver.addToMatrix(i, inverComplex);
 		}
-		return inversoVector;
+
+		return inver;
 	}
 
 }
