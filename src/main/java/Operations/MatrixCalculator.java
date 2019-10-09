@@ -65,6 +65,7 @@ public class MatrixCalculator {
 
 	}
 
+
 	public static MatrizComplex conMatrix(MatrizComplex mat1) {
 		MatrizComplex matfinal = new MatrizComplex(mat1.getFilas(), mat1.getColumnas());
 		Complex rtaComplex;
@@ -78,11 +79,28 @@ public class MatrixCalculator {
 		return matfinal;
 
 	}
+	
+	public static VectorComplex conMatrixVec(VectorComplex mat1) {
+		VectorComplex matfinal = new VectorComplex(mat1.getFilas());
+		Complex rtaComplex;
+		Complex con = new Complex(0, 0);
+		for (int i = 0; i < mat1.getFilas(); i++) {
+				rtaComplex = con.conComplex(mat1.getElement(i));
+				matfinal.addToMatrix(i, rtaComplex);
+		}
+		return matfinal;
+
+	}
 
 	public static MatrizComplex adjMatrix(MatrizComplex mat1) {
 		return trasMatrix(conMatrix(mat1));
 
 	}
+	public static VectorComplex adjMatrixVec(VectorComplex mat1) {
+		return conMatrixVec(mat1);
+
+	}
+
 
 	public static VectorComplex actionMatrix(MatrizComplex mat1, MatrizComplex mat2) {
 		if (mat1.getColumnas() == mat1.getColumnas())
@@ -120,14 +138,13 @@ public class MatrixCalculator {
 		return matfinal;
 	}
 
-	public static Complex innerTwoMatriz(MatrizComplex mat1, MatrizComplex mat2) {
-		MatrizComplex refeComplex = adjMatrix(mat1);
+	public static Complex innerTwoMatriz(VectorComplex mat1, VectorComplex mat2) {
+		VectorComplex refeComplex = adjMatrixVec(mat1);
 		Complex prdComplex = new Complex(0, 0);
 		;
 		for (int i = 0; i < mat1.getFilas(); i++) {
-			for (int j = 0; j < mat1.getColumnas(); j++) {
-				prdComplex = prdComplex.sumComplex(refeComplex.getPosition(i, j).mulComplex(mat2.getPosition(i, j)));
-			}
+				prdComplex = prdComplex.sumComplex(refeComplex.getElement(i).mulComplex(mat2.getElement(i)));
+			
 
 		}
 		return prdComplex;
